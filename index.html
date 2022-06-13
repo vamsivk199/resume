@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   
+<div id="page">
+    <div class="photo-and-name">
+        <img src="vkpic.jpeg" class="photo" alt="Profile Picture">
+        <div class="contact-info-box">
+            <h1 class="name">Vamsi Krishna</h1>
+            <br>
+            <h3 class="job-title">UI Developer</h3>
+            <p class="contact-details">Phone: +91-9398298542 &nbsp; &nbsp; - &nbsp; Email: pentakotavamsikrishna9@gmail.com</p>
+        </div>
+    </div>
+    <div id="objective">
+        <button type="button" class="collapsible" style="margin-left:-154px">Objective</button>
+        <p>
+            Creative UI Developer with 2 years spent optimizing user experience through implementing creative processes, innovating, and developing seamless UI. Successful in driving user engagement for well-known brands, providing a compelling user experience to improve brand loyalty, and boosting customer retention.        </p>
+    </div>
+    <div id="education">
+        <button type="button" class="collapsible">Education</button>
+        <table style="margin-top: 15px">
+            <tr>
+                <td style="width: 120px; color: gray;">2013 - 2017</td>
+                <td style="color: #000"><b>B.tech</b>: Veltech University</td>
+            </tr>
+            <tr>
+                <td style="width: 120px; color: gray;">2018 - 2020</td>
+                <td style="color: #000"><b>MBA</b>: Business Analytics - University of Hyderabad</td>
+            </tr>
+        </table>
+    </div>
+    <div id="work">
+        <button type="button" class="collapsible">Experience</button>
+        <table style="margin-top:17px">
+            <tr class="work-1">
+                <td>2020 - present</td>
+                <td><b>Bridge i2i Analytical Solutions</b><br><li style="padding-top:17px"> Completed 7 UI development projects, which includes analyzing user interface issues and creating manageable solutions to achieve clients business goals and requirements</li>
+                <br>
+                 <li style="padding-top: 15px;">Manage and mentor to 2 junior UI developers to improve their understanding of establishing UI goals, priorities, and deliverables that align with product milestones</li>   
+            </td>
+            </tr>
+            <tr class="work-2">
+                <td>2017 - 2018</td>
+                <td><b>Isuzu motors pvt ltd</b>: worked as a Graduate engineer Trainee</td>
+            </tr>
+        </table>
+    </div>
+    <div >
+        <button class="collapsible">Skills</button>
+        <ul style="list-style-type:disc; color: #000;">
+            <li>HTML</li><br>
+            <li>CSS</li><br>
+            <li>Excel</li><br>
+            <li>JavaScript</li><br>
+            <li>SQL</li><br>
+            <li>Shopify Theme Development</li>
+         </ul>
+
+    </div>
+    <div>
+        <button class="collapsible">Interests</button>
+        <ul style="list-style-type:disc; color: #000;">
+            <li>Travelling</li><br>
+            <li>Browsing</li><br>
+            <li>Sports</li><br>
+            <li>Gaming</li><br>
+            <li>Photography</li><br>
+         </ul>
+
+         <script>
+            var coll = document.getElementsByClassName("collapsible");
+            var i;
+            
+            for (i = 0; i < coll.length; i++) {
+              coll[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.display === "block") {
+                  content.style.display = "none";
+                } else {
+                  content.style.display = "block";
+                }
+              });
+            }
+            </script>
+    </div>
+</div>
+
+</body>
+</html>
